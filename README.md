@@ -22,3 +22,4 @@ Projeto em Laravel que permite ao usuário autenticar-se usando redes sociais at
 * **Autenticação:** Laravel Socialite & Socialite Providers
 * **Front-end:** Bootstrap 5
 * **Banco de Dados:** MySQL
+* Aplicativos criados nos painéis de desenvolvedor de cada rede social (Meta for Developers, GitHub e Google Cloud), com as credenciais (`CLIENT_ID` e `CLIENT_SECRET`) e a URL de callback cadastrada
