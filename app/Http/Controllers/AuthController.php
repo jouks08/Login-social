@@ -38,7 +38,7 @@ class AuthController extends Controller
                 ->with('login_error', 'E-mail ou senha incorretos!');
         }
 
-        $user->touch(); // Atualiza o campo updated_at
+        $user->touch();
 
         session([
             'user' => [
@@ -50,7 +50,6 @@ class AuthController extends Controller
         return redirect()->route('dashboard');
     }
 
-    // Exibe a tela de cadastro (faltava este método)
     public function register()
     {
         return view('formulario_registro');
@@ -122,7 +121,7 @@ class AuthController extends Controller
                 'email' => $providerUser->getEmail(),
             ]
         );
-        // Grava a sessão da mesma forma que no login manual
+
         session([
             'user' => [
                 'id' => $user->id,

@@ -19,8 +19,6 @@
 
                 <form action="{{ route('register.submit') }}" method="POST">
                     @csrf
-
-                    <!-- Nome do Usuário -->
                     <div class="mb-3">
                         <label for="text_name" class="form-label">Nome</label>
                         <input type="text"
@@ -34,7 +32,6 @@
                         @enderror
                     </div>
 
-                    <!-- E-mail -->
                     <div class="mb-3">
                         <label for="text_username" class="form-label">E-mail</label>
                         <input type="email"
@@ -48,7 +45,6 @@
                         @enderror
                     </div>
 
-                    <!-- Senha -->
                     <div class="mb-3">
                         <label for="text_password" class="form-label">Senha</label>
                         <input type="password"
@@ -61,7 +57,6 @@
                         @enderror
                     </div>
 
-                    <!-- Confirmação de Senha -->
                     <div class="mb-3">
                         <label for="text_password_repeat" class="form-label">Confirmar Senha</label>
                         <input type="password"
@@ -74,7 +69,6 @@
                         @enderror
                     </div>
 
-                    <!-- Botão de Cadastro -->
                     <div class="mb-3 d-grid">
                         <button type="submit" class="btn btn-primary">
                             <i class="fa-solid fa-user-plus me-2"></i> Cadastrar
